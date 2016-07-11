@@ -43,6 +43,10 @@ controller.hears(['Who is the best?'], ['direct_message'], function (bot, messag
   bot.reply(message, '@gaysojj is!')
 })
 
+controller.hears(['Do you like to party?'], ['direct_mention'], function (bot, message) {
+  bot.reply(message, 'Like it? I love it!!!!!')
+})
+
 controller.hears('.*', ['mention'], function (bot, message) {
   bot.reply(message, 'You really do care about me. :heart:')
 })
